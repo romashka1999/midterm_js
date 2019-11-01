@@ -15,10 +15,7 @@ class Person {
 class Employee extends Person {
     
     constructor({name, surname, personalId, salary}){
-        super(name, surname, personalId);
-        this.name = name;
-        this.surname = surname;
-        this.personalId = personalId;
+        super({name, surname, personalId});
         this.salary = salary;
     }
 
